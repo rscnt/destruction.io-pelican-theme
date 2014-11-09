@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block view %}
+<div class="row">
+    <ul class="nav nav-pills">
+        <li>
+            <a href="#fecha">By date</a>
+        </li>
+        <li class="menu-item">
+            <a href="#etiqueta">By topic</a>
+        </li>
+    </ul>
+</div>
+
+<div id="fecha">
+    {% for year, date_year in dates|groupby( 'date.year' )|sort(reverse=True) %}
+    <h2>{{ year }}</h2>
+    <ol class="archive">
+        {% for article in date_year %}
+        <li class="clearfix"><a href="{{ article.url }}"><time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time> {{ article.title }}</a></li>
+        {% endfor %}
+    </ol>
+    {% endfor %}
+</div>
+
+<div id="etiqueta">
+    <h2>Tags</h2>
+    <ul class="tag">
+        {% for tag in tag_cloud|sort %}
+        <li class="tag-{{ tag.1 }}"><a href="{{ SITEURL }}/{{ tag.0.url }}">{{ tag.0 }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% include "pagination.html"%}
+{% endblock %}

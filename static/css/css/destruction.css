@@ -1,0 +1,171 @@
+/* elements */
+/* line 2, ../sass/destruction.scss */
+html body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background: #f7f7f7;
+}
+
+/* line 9, ../sass/destruction.scss */
+ul {
+  list-style: disc outside none;
+  line-height: 1.8;
+}
+
+/* elements */
+/* helpers  */
+/* line 17, ../sass/destruction.scss */
+.margin.top20 {
+  display: block;
+  margin-top: 20px;
+}
+
+/* line 22, ../sass/destruction.scss */
+.margin.top40 {
+  display: block;
+  margin-top: 40px;
+}
+
+/* line 27, ../sass/destruction.scss */
+.margin.top60 {
+  display: block;
+  margin-top: 60px;
+}
+
+/* line 32, ../sass/destruction.scss */
+.nav > li {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  padding: 0px 10px;
+  line-height: 10px;
+}
+
+/* line 40, ../sass/destruction.scss */
+.nav .nav ul {
+  list-style-position: outside;
+  list-style-type: none;
+}
+
+/* helpers  */
+/* line 46, ../sass/destruction.scss */
+.head, .footer {
+  background: #000;
+  display: block;
+  color: #f7f7f7;
+}
+/* line 50, ../sass/destruction.scss */
+.head .inner, .footer .inner {
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 55px 0px;
+  text-align: center;
+}
+/* line 56, ../sass/destruction.scss */
+.head .header-nav, .footer .header-nav {
+  padding-top: 10px;
+  display: inline-block;
+  text-align: center;
+  margin: 0px auto;
+}
+/* line 62, ../sass/destruction.scss */
+.head .logo-text, .footer .logo-text {
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  line-height: 44px;
+  padding: 0px;
+  margin: 0px;
+}
+/* line 73, ../sass/destruction.scss */
+.head a, .head a:visited, .footer a, .footer a:visited {
+  text-decoration: none !important;
+  color: #f6f6f6 !important;
+  background: none !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0) !important;
+}
+/* line 80, ../sass/destruction.scss */
+.head a:hover, .head a:active, .head a:focus, .footer a:hover, .footer a:active, .footer a:focus {
+  background: none !important;
+  color: #f6f6f6 !important;
+  border-bottom: 1px solid #74BEE1 !important;
+}
+
+/* line 88, ../sass/destruction.scss */
+#content-wrapper {
+  position: relative;
+  height: 100%;
+  margin: 0px auto;
+  padding: 40px 40px;
+}
+
+/* line 96, ../sass/destruction.scss */
+.content-post {
+  width: 100%;
+}
+
+/* line 100, ../sass/destruction.scss */
+.post:first-child {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+/* line 105, ../sass/destruction.scss */
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+/* line 109, ../sass/destruction.scss */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* line 114, ../sass/destruction.scss */
+.entry-wrap {
+  overflow: hidden;
+  padding: 0px;
+}
+
+/* line 119, ../sass/destruction.scss */
+.entry-content {
+  width: 80%;
+  max-width: 800px;
+  margin: 60px auto;
+  position: relative;
+}
+
+/* line 126, ../sass/destruction.scss */
+.clearfix {
+  height: 1%;
+}
+
+/* line 130, ../sass/destruction.scss */
+.entry-content header {
+  word-wrap: break-word;
+}
+
+/* line 134, ../sass/destruction.scss */
+.post-header {
+  margin-bottom: 30px;
+}
+
+/* line 138, ../sass/destruction.scss */
+.entry-title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 44p;
+  font-weight: 600px;
+  width: 80%;
+  margin: 0px auto;
+  color: #444;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 151, ../sass/destruction.scss */
+.white-background {
+  background: #fff;
+}
