@@ -1,64 +1,51 @@
-/*
-Error: File to import not found or unreadable: ../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap-compass.scss.
-       Load paths:
-         Compass::SpriteImporter
-         /home/r/development/python/pelican/destruction.io/destruction.io-pelican-theme/static/css/sass
-         /home/r/.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets
-        on line 3 of /home/r/development/python/pelican/destruction.io/destruction.io-pelican-theme/static/css/sass/main.scss
+/* line 6, ../sass/main.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
 
-1: $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/";
-2: // bower:scss
-3: @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap-compass.scss";
-4: // endbower
-5: 
-6: .browsehappy {
-7:   margin: 0.2em 0;
-8:   background: #ccc;
+/* Space out content a bit */
+/* line 14, ../sass/main.scss */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
-Backtrace:
-/home/r/development/python/pelican/destruction.io/destruction.io-pelican-theme/static/css/sass/main.scss:3
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/import_node.rb:66:in `rescue in import'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/import_node.rb:45:in `import'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/import_node.rb:28:in `imported_file'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/import_node.rb:37:in `css_import?'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:20:in `render'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/engine.rb:268:in `render'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
-/home/r/.gem/ruby/2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/home/r/.gem/ruby/2.2.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
-/home/r/.gem/ruby/2.2.0/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
-/home/r/.gem/ruby/2.2.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
-/home/r/.gem/ruby/2.2.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
-/home/r/.gem/ruby/2.2.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/home/r/.gem/ruby/2.2.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/home/r/.gem/ruby/2.2.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
-/home/r/.gem/ruby/2.2.0/gems/compass-1.0.3/bin/compass:44:in `call'
-/home/r/.gem/ruby/2.2.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
-/home/r/.rbenv/versions/2.2.1/bin/compass:23:in `load'
-/home/r/.rbenv/versions/2.2.1/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: ../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap-compass.scss.\A        Load paths:\A          Compass::SpriteImporter\A          /home/r/development/python/pelican/destruction.io/destruction.io-pelican-theme/static/css/sass\A          /home/r/.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets\A         on line 3 of /home/r/development/python/pelican/destruction.io/destruction.io-pelican-theme/static/css/sass/main.scss\A \A 1: $icon-font-path: \"../../bower_components/bootstrap-sass-official/assets/fonts/\";\A 2: // bower:scss\A 3: @import \"../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap-compass.scss\";\A 4: // endbower\A 5: \A 6: .browsehappy {\A 7:   margin: 0.2em 0;\A 8:   background: #ccc;"; }
+/* line 19, ../sass/main.scss */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* line 26, ../sass/main.scss */
+  .container {
+    max-width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Remove the padding we set earlier */
+  /* line 33, ../sass/main.scss */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  /* line 40, ../sass/main.scss */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  /* line 44, ../sass/main.scss */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

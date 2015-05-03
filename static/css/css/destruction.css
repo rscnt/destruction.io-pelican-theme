@@ -84,7 +84,7 @@ ul {
   text-decoration: none !important;
   color: #f6f6f6 !important;
   background: none !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0) !important;
+  border-bottom: 1px solid transparent !important;
 }
 /* line 80, ../sass/destruction.scss */
 .head a:hover, .head a:active, .head a:focus, .footer a:hover, .footer a:active, .footer a:focus {
@@ -98,7 +98,8 @@ ul {
   position: relative;
   height: 100%;
   margin: 0px auto;
-  padding: 40px 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 /* line 96, ../sass/destruction.scss */
@@ -166,6 +167,6 @@ ul {
 }
 
 /* line 151, ../sass/destruction.scss */
-.white-background {
+#content {
   background: #fff;
 }
