@@ -98,8 +98,7 @@ ul {
   position: relative;
   height: 100%;
   margin: 0px auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  padding: 40px;
 }
 
 /* line 96, ../sass/destruction.scss */
@@ -168,5 +167,9 @@ ul {
 
 /* line 151, ../sass/destruction.scss */
 #content {
+  background: #fff;
+}
+
+.white-background {
   background: #fff;
 }
