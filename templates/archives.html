@@ -2,8 +2,8 @@
 {% block view %}
 <div id="fecha">
     {% for year, date_year in dates|groupby( 'date.year' )|sort(reverse=True) %}
-    <h2 class="entry-title text-centered">{{ year }}</h2>
-    <div class="margin top20">
+    <h2 class="entry-title text-centered row">{{ year }}</h2>
+    <div class="margin top20 row">
         {% for article in date_year %}
         <div class="col-md-6 col-sm-1 clearfix">
             <a href="{{ article.url }}" class="button btn-default">
