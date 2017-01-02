@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% block title %}{{ page.title }}{%endblock%}
 {% block view %}
 <div class="row">
     <div class="content-post">
@@ -6,13 +7,15 @@
             <article class="post">
                 <div class="entry-wrap clearfix">
                     <header class="post-header">
-                        <h2 class="text-uppercase entry-title">
+                        <h1 class="text-uppercase entry-title">
                             {{ page.title  }}
-                        </h2>
+                        </h1>
                     </header>
+                    <div class="entry-content">
                     <p>
                         {{ page.content }}
                     </p>
+                    </div>
                 </div>
             </article>
         </div>

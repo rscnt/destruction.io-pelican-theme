@@ -1,15 +1,41 @@
 /* elements */
 /* line 2, ../sass/destruction.scss */
 html body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  background: #f7f7f7;
+  font: 16px/24px 'Vollkorn', serif;
+  color: #333;
+  text-align: justify;
+  margin: 0 auto;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+td image {
+  width: 100%;
 }
 
 /* line 9, ../sass/destruction.scss */
 ul {
   list-style: disc outside none;
   line-height: 1.8;
+}
+
+a {
+  color:  #736960;
+}
+
+a:hover, a:focus, a:active {
+  color: #693;
+  text-decoration: none;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background: none;
 }
 
 /* elements */
@@ -50,17 +76,9 @@ ul {
 /* helpers  */
 /* line 46, ../sass/destruction.scss */
 .head, .footer {
-  background: #000;
   display: block;
-  color: #f7f7f7;
 }
 /* line 50, ../sass/destruction.scss */
-.head .inner, .footer .inner {
-  max-width: 800px;
-  margin: 0px auto;
-  padding: 55px 0px;
-  text-align: center;
-}
 /* line 56, ../sass/destruction.scss */
 .head .header-nav, .footer .header-nav {
   padding-top: 10px;
@@ -69,36 +87,26 @@ ul {
   margin: 0px auto;
 }
 /* line 62, ../sass/destruction.scss */
-.head .logo-text, .footer .logo-text {
-  font-family: "Oswald", Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
+.head, .footer {
   display: block;
-  text-align: center;
+  text-align: right;
   line-height: 44px;
   padding: 0px;
   margin: 0px;
 }
+
+.footer {
+  text-transform: uppercase;
+}
 /* line 73, ../sass/destruction.scss */
-.head a, .head a:visited, .footer a, .footer a:visited {
-  text-decoration: none !important;
-  color: #f6f6f6 !important;
-  background: none !important;
-  border-bottom: 1px solid transparent !important;
-}
 /* line 80, ../sass/destruction.scss */
-.head a:hover, .head a:active, .head a:focus, .footer a:hover, .footer a:active, .footer a:focus {
-  background: none !important;
-  color: #f6f6f6 !important;
-  border-bottom: 1px solid #74BEE1 !important;
-}
 
 /* line 88, ../sass/destruction.scss */
 #content-wrapper {
   position: relative;
   height: 100%;
   margin: 0px auto;
-  padding: 40px;
+  padding: 10px 0px;
 }
 
 /* line 96, ../sass/destruction.scss */
@@ -131,10 +139,8 @@ ul {
 
 /* line 119, ../sass/destruction.scss */
 .entry-content {
-  width: 80%;
-  max-width: 800px;
-  margin: 60px auto;
   position: relative;
+  margin-top: 20px;
 }
 
 /* line 126, ../sass/destruction.scss */
@@ -148,28 +154,58 @@ ul {
 }
 
 /* line 134, ../sass/destruction.scss */
-.post-header {
-  margin-bottom: 30px;
-}
 
 /* line 138, ../sass/destruction.scss */
 .entry-title {
-  text-align: center;
-  font-size: 24px;
-  line-height: 44p;
-  font-weight: 600px;
-  width: 80%;
-  margin: 0px auto;
-  color: #444;
-  font-family: "Oswald", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+  font-family: 'Unica One', sans-serif;
 }
 
 /* line 151, ../sass/destruction.scss */
 #content {
-  background: #fff;
 }
 
 .white-background {
-  background: #fff;
+}
+
+table {
+  border: 0px;
+  border-color: #fff;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  border: 0px;
+  border-color: #fff;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+.footer {
+  padding-top: 40px;
+}
+
+.pager li > a, .pager li > span {
+  border: none;
+}
+
+
+#toc ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#toc li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+#toc li:before {
+  content: "-";
+  color: #693;
+  padding-right: 5px;
 }

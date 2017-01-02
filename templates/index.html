@@ -9,14 +9,17 @@
                 <div class="entry-wrap clearfix">
                     <header class="post-header">
                         <a href="/{{article.url}}">
-                            <h2 class="text-uppercase entry-title">
-                                {{ article.title  }}
-                            </h2>
+                            <h1 class="text-uppercase entry-title">
+                               {{ article.title  }}
+                              <small class="text-muted">
+                              {{ article.stats['read_mins'] }} min read
+                            </small>
+                            </h1>
                         </a>
                     </header>
-                    <p>
+                    <div class="entry-content">
                         {{ article.summary }}
-                    </p>
+                    </div>
                 </div>
             </article>
         </div>

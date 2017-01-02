@@ -1,21 +1,20 @@
 {% extends "base.html" %}
+{% block title %} ξ {% endblock %}
 {% block view %}
 <div id="fecha">
     {% for year, date_year in dates|groupby( 'date.year' )|sort(reverse=True) %}
+    <div class="col-md-12">
     <h2 class="entry-title text-centered row">{{ year }}</h2>
-    <div class="margin top20 row">
         {% for article in date_year %}
         <div class="col-md-6 col-sm-1 clearfix">
-            <a href="{{ article.url }}" class="button btn-default">
-                <p class="text-center">
-                    <span class="label label-default text-center">
-                        <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time> 
-                    </span>
-                    &nbsp;
-                    <span class="label label-primary text-center">
-                        {{ article.title }}
-                    </span>
-                </p>
+            <span>
+                <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time> 
+            </span>
+            -
+            <a href="{{ article.url }}">
+              <span>
+                  {{ article.title }}
+              </span>
             </a>
         </div>
         {% endfor %}
