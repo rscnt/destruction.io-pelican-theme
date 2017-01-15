@@ -2,7 +2,7 @@
 /* line 2, ../sass/destruction.scss */
 html body {
   font: 16px/24px 'Vollkorn', serif;
-  color: #333;
+  color: rgb(45, 45, 45);
   text-align: justify;
   margin: 0 auto;
   height: 100%;
@@ -26,11 +26,11 @@ ul {
 }
 
 a {
-  color:  #736960;
+  color: rgb(115, 105, 96);
 }
 
 a:hover, a:focus, a:active {
-  color: #693;
+  color: #9a8457;
   text-decoration: none;
 }
 
